@@ -25,7 +25,7 @@ namespace Controller
 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GetComponent<Combat>().Attack();
+                    GetComponent<Combat>().Attack(target);
                 }
                 return true;
             }
@@ -38,10 +38,12 @@ namespace Controller
             bool hashit = Physics.Raycast(ray, out hit);
 
             if (hashit)
-            {
-                GetComponent<Combat>().Attack();
+            {               
                 {
-                    GetComponent<Movement>().MoveTo(hit.point);
+                    if (Input.GetMouseButton(0))
+                    {
+                        GetComponent<Movement>().StartMoveAction(hit.point);
+                    }                   
                 }
                 return true;
             }
