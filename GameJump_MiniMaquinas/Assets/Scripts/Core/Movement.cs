@@ -1,4 +1,3 @@
-using Combatt;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +5,7 @@ using UnityEngine.AI;
 
 namespace Core
 {
-    public class Movement : MonoBehaviour
+    public class Movement : MonoBehaviour, IAction
     {
         private NavMeshAgent navMeshAgent;
 
@@ -17,7 +16,7 @@ namespace Core
 
         public void StartMoveAction(Vector3 destination)
         {
-            GetComponent<Combat>().Cancel();
+            GetComponent<Scheduler>().StartAction(this);
             MoveTo(destination);
         }
 
@@ -26,7 +25,7 @@ namespace Core
             navMeshAgent.destination = destination;
             navMeshAgent.isStopped = false;
         }
-        public void Stop()
+        public void Cancel()
         {
             navMeshAgent.isStopped = true;
         }
