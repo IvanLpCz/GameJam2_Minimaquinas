@@ -8,8 +8,16 @@ namespace Controller
 {
     public class PlayerController : MonoBehaviour
     {
+        Health health;
+
+        private void Start()
+        {
+            health = GetComponent<Health>();
+        }
         private void Update()
         {
+            if (health.IsDead()) return;
+
             if(InteractCombat()) return;
             if(InteractMovement()) return;
         }

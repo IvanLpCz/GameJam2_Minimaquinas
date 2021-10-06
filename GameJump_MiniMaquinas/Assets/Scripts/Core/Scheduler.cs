@@ -16,5 +16,9 @@ namespace Core
             }            
             currentAtion = action;
         }
+        public void CancelCurrentAction()
+        {
+            StartAction(null);
+        }
     }
 }

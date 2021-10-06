@@ -1,4 +1,5 @@
 using Combatt;
+using Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,14 +11,19 @@ namespace Controller
         [SerializeField] float chaseDistance = 10f;
         private GameObject player;
         Combat combat;
+        Health health;
+        
 
         private void Start()
         {
             player = GameObject.FindWithTag("Player");
             combat = GetComponent<Combat>();
+            health = GetComponent<Health>();
         }
         private void Update()
-        {           
+        {
+            if (health.IsDead()) return;
+
             if(InRange() && combat.CanAttakck(player))
             {
                 combat.Attack(player);

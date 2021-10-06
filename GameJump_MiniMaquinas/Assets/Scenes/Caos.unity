@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5138379, g: 0.43437418, b: 0.33636752, a: 1}
+  m_IndirectSpecularColor: {r: 0.7796268, g: 0.60356015, b: 0.4320114, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -746,7 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 5
-  timeBetweenAttaks: 0
+  timeBetweenAttaks: 1
   attakPower: 5
 --- !u!114 &753158086
 MonoBehaviour:
@@ -791,7 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ebbf8d8587fcc45a0b15013fb8f00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  hp: 5
 --- !u!1 &802082656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,7 +1374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ebbf8d8587fcc45a0b15013fb8f00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  hp: 5
 --- !u!95 &1392818056
 Animator:
   serializedVersion: 3
@@ -1419,9 +1419,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 036fbc0bb36a86c41b3ea64a51f4c705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 2
-  timeBetweenAttaks: 1
-  attakPower: 5
+  attackRange: 4
+  timeBetweenAttaks: 1.5
+  attakPower: 1
 --- !u!114 &1392818059
 MonoBehaviour:
   m_ObjectHideFlags: 0

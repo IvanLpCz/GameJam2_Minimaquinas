@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Combatt
+namespace Core
 {
     public class Health : MonoBehaviour
     {
@@ -31,6 +31,7 @@ namespace Combatt
 
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
+            GetComponent<Scheduler>().CancelCurrentAction();
         }
     }
 }
