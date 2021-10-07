@@ -9,6 +9,7 @@ namespace Controller
     public class PlayerController : MonoBehaviour
     {
         Health health;
+        public bool canAttack;
 
         private void Start()
         {
@@ -17,8 +18,10 @@ namespace Controller
         private void Update()
         {
             if (health.IsDead()) return;
-
-            if(InteractCombat()) return;
+            if (canAttack)
+            {
+                if (InteractCombat()) return;
+            }            
             if(InteractMovement()) return;
         }
 

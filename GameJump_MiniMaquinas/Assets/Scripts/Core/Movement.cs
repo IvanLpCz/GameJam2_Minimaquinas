@@ -18,6 +18,8 @@ namespace Core
         private void Update()
         {
             navMeshAgent.enabled = !health.IsDead();
+
+            UpdateAnimator();
         }
         public void StartMoveAction(Vector3 destination)
         {
@@ -33,6 +35,13 @@ namespace Core
         public void Cancel()
         {
             navMeshAgent.isStopped = true;
+        }
+        void UpdateAnimator()
+        {
+            Vector3 velocity = navMeshAgent.velocity;
+            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+            float speed = localVelocity.z;
+            GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
     }
 }
