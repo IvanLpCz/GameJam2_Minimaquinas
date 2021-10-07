@@ -6,14 +6,8 @@ namespace Core
 {
     public class PlayerManagement : MonoBehaviour
     {
-        public GameObject playerMax, playerMini;
-        public bool miniIsActive, maxIsActive;
+        public GameObject playerBig, playerMin;
 
-        private void Start()
-        {
-            maxIsActive = true;
-            miniIsActive = false;
-        }
 
         private void Update()
         {
@@ -24,14 +18,24 @@ namespace Core
         }
         private void SwaptCharacterToMini()
         {
-            Vector3 PlayerMaxPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
-
-            if(miniIsActive == false)
+            //playerMin.SetActive(true);
+            //playerMin.transform.position = playerBig.transform.position;
+            //playerMin.transform.rotation = playerBig.transform.rotation;
+            //playerBig.SetActive(false);
+            if (playerBig.activeSelf)
             {
-                playerMini.transform.position = PlayerMaxPosition;
-            }            
-            playerMax.SetActive(false);
-            playerMini.SetActive(true);
+                playerBig.SetActive(false);
+                playerMin.transform.position = playerBig.transform.position;
+                playerMin.transform.rotation = playerBig.transform.rotation;
+                playerMin.SetActive(true);
+            }
+            else if (playerMin.activeSelf)
+            {
+                playerMin.SetActive(false);
+                playerBig.transform.position = playerMin.transform.position;
+                playerBig.transform.rotation = playerMin.transform.rotation;               
+                playerBig.SetActive(true);
+            }
 
         }
     }
