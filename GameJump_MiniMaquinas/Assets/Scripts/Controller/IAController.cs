@@ -22,13 +22,16 @@ namespace Controller
         
 
         private void Start()
-        {
-            player = GameObject.FindWithTag("Player");
+        {            
             combat = GetComponent<Combat>();
             health = GetComponent<Health>();
             movement = GetComponent<Movement>();
 
             guardingLocation = transform.position;
+        }
+        private void FixedUpdate()
+        {
+            player = GameObject.FindWithTag("Player");
         }
         private void Update()
         {
