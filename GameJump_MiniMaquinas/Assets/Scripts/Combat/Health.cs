@@ -6,7 +6,7 @@ namespace Core
 {
     public class Health : MonoBehaviour
     {
-        [SerializeField] float hp = 10f;
+        [SerializeField] public float hp = 10f;
 
         bool isDead = false;
 
