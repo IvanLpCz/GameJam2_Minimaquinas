@@ -16,14 +16,14 @@ namespace Core
                 SwaptCharacterToMini();
             }
         }
-        //public void OnTriggerEnter(Collider other)
-        //{
-        //    if (other.gameObject.CompareTag("ChangePlayer"))
-        //    {
-        //        SwaptCharacterToMini();
-        //        Debug.Log("entra en contacto");
-        //    }
-        //}
+        public void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "ChangePlayer")
+            {
+                SwaptCharacterToMini();
+                Debug.Log("entra en contacto");
+            }
+        }
         private void SwaptCharacterToMini()
         {
             if (playerBig.activeSelf)
