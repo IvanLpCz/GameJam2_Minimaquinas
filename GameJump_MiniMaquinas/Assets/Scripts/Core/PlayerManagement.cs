@@ -13,14 +13,17 @@ namespace Core
         {
             if(Input.GetKeyDown(KeyCode.Q))
             {
-                //SwaptCharacterToMini();
+                SwaptCharacterToMini();
             }
         }
-        public void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.CompareTag("ChangePlayer"))
-                SwaptCharacterToMini();
-        }
+        //public void OnTriggerEnter(Collider other)
+        //{
+        //    if (other.gameObject.CompareTag("ChangePlayer"))
+        //    {
+        //        SwaptCharacterToMini();
+        //        Debug.Log("entra en contacto");
+        //    }
+        //}
         private void SwaptCharacterToMini()
         {
             if (playerBig.activeSelf)
