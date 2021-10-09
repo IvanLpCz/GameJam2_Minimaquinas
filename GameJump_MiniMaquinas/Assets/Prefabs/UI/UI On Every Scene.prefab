@@ -1281,7 +1281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 6671680113612588402}
-  hpText: {fileID: 0}
+  hpText: {fileID: 6671680114816796471}
   pauseMenu: {fileID: 6671680115219312056}
   playerHud: {fileID: 6671680114561000349}
 --- !u!114 &6671680114712778254
@@ -1501,7 +1501,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 131.37463, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &6671680115219312056
@@ -1522,7 +1522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6671680115219312060
 RectTransform:
   m_ObjectHideFlags: 0
