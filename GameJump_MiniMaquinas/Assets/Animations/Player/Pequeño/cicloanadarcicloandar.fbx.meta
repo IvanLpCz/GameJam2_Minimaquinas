@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: f3fab715cc270444cbd8834f439431c2
+guid: d1f31a09b747821469d131f197fdf442
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 1827226128182048838
-    second: Take 001
+      74: -6679765810249749059
+    second: cicloandar
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -93,11 +93,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: f3fab715cc270444cbd8834f439431c2, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 

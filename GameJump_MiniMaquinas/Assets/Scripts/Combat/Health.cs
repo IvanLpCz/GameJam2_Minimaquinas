@@ -9,6 +9,7 @@ namespace Core
         [SerializeField] public float hp = 10f;
 
         bool isDead = false;
+        public GameObject deathMenu;
 
         public bool IsDead()
         {
@@ -32,6 +33,10 @@ namespace Core
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<Scheduler>().CancelCurrentAction();
+            if (CompareTag("Player"))
+            {
+                deathMenu.SetActive(true);
+            }
         }
     }
 }

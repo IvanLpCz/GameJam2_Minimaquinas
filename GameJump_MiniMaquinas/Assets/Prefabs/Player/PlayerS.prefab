@@ -140,7 +140,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 12
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -298,7 +298,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -371,8 +371,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2879877144144065606}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3d7af718a4051b2478667054c5791133, type: 2}
+  m_Avatar: {fileID: 9000000, guid: 0d853298837f6464084cc3d94e9e3862, type: 3}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -394,6 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 5
+  deathMenu: {fileID: 0}
 --- !u!1 &2879877144369548987
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +535,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 12
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -688,7 +689,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 12
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -884,7 +885,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 12
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -957,7 +958,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2879877144990969067}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: f3fab715cc270444cbd8834f439431c2, type: 3}
   m_Controller: {fileID: 9100000, guid: ae3409f12faa5fa49b07e889b9704d4b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -980,6 +981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 5
+  deathMenu: {fileID: 0}
 --- !u!1 &2879877144994894898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,7 +1202,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 12
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1268,13 +1270,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2879877145617270765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 8.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2879877144144065605}
   m_Father: {fileID: 2879877144994894897}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1062486314
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5537963378630490518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: f82e49a408bfa974ca9f8cb2442303d2, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3d7af718a4051b2478667054c5791133, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2879877144229949669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1714,6 +1735,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fae130648770d24a9b79b01a8d159fe, type: 3}
+--- !u!1 &5537963378630490518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7723019531677626361, guid: 3fae130648770d24a9b79b01a8d159fe, type: 3}
+  m_PrefabInstance: {fileID: 2879877145686447727}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5156934888533009196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6946377962622825795, guid: 3fae130648770d24a9b79b01a8d159fe, type: 3}
