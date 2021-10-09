@@ -45,7 +45,7 @@ namespace Combatt
 
         private void TriggerAtk()
         {
-            GetComponent<Animator>().ResetTrigger("stopattack");
+            GetComponent<Animator>().ResetTrigger("attack");
             GetComponent<Animator>().SetTrigger("attack");
         }
 
