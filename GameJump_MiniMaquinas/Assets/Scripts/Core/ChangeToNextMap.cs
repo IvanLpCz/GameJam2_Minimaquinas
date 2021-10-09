@@ -15,13 +15,13 @@ namespace Core
 
         public void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag("a"))
+            if (other.gameObject.CompareTag("Player"))
             {
                sceneID++;
                SceneManager.LoadScene(sceneID);
-               Debug.Log("entra en contacto");
+               
             }
-
+            Debug.Log("entra en contacto");
         }
 
     }
