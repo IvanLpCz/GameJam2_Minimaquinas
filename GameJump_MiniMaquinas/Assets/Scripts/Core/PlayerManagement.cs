@@ -6,7 +6,7 @@ namespace Core
 {
     public class PlayerManagement : MonoBehaviour
     {
-        public GameObject playerBig, playerMin, cameraBig, cameraMin;
+        public GameObject playerBig, playerMin, cameraBig, cameraMin, block;
 
 
         private void Update()
@@ -34,6 +34,7 @@ namespace Core
                 playerMin.SetActive(true);
                 cameraBig.SetActive(false);
                 cameraMin.SetActive(true);
+                block.SetActive(false);
             }
             else if (playerMin.activeSelf)
             {
@@ -43,6 +44,7 @@ namespace Core
                 playerBig.SetActive(true);
                 cameraMin.SetActive(false);
                 cameraBig.SetActive(true);
+                block.SetActive(true);
             }
 
         }

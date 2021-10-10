@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 2add4f1db6857714eb97e539edc03d2f
+guid: e181d3c0a6128c043be3ee64f5f5cbb6
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -7944683265193213750
-    second: minirobotidle
+      74: -5412360776124738083
+    second: Movimiento
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: minirobotidle
-      takeName: minirobotidle
+      name: Movimiento
+      takeName: Movimiento
       internalID: 0
-      firstFrame: 0
-      lastFrame: 70
+      firstFrame: 1
+      lastFrame: 10
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -62,7 +62,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -122,7 +122,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 8bc865aee6f65404a9de0f1a724b9142, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: d97e634495087504882ea34a977a0f69, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
