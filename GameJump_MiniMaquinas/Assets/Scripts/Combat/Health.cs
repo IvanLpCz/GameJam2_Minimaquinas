@@ -32,10 +32,15 @@ namespace Core
 
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
+            Debug.Log("Se ha puerto");
             GetComponent<Scheduler>().CancelCurrentAction();
             if (CompareTag("Player"))
             {
                 deathMenu.SetActive(true);
+            }
+            if (CompareTag("Enemy"))
+            {
+                gameObject.SetActive(false);
             }
         }
     }

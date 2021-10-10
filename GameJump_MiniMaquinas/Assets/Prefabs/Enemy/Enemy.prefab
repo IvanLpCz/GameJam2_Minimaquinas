@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 8690853561735548804}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,10 +102,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.7423171
+  m_Height: 3.1910014
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.24231754, y: 0.5954999, z: -0.0000000032576022}
 --- !u!114 &8690853561735548815
 MonoBehaviour:
   m_ObjectHideFlags: 0

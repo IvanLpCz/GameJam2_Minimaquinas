@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ChangePlayer
   - a
+  - Enemy
   layers:
   - Default
   - TransparentFX
